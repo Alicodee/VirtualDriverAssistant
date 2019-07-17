@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E4E4E4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_shape">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="2">
+            <TextView
+                android:layout_weight="1.8"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VDA Dashboard"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="18dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:gravity="left"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_weight="0.2"
+                android:id="@+id/profile_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/dp"
+                android:onClick="pickImage"
+                android:layout_margin="16dp">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="0dp"
+                android:layout_margin="16dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/assistantServiceView"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ripple"
+                    android:elevation="1dp"
+                    android:weightSum="2"
+                    android:paddingBottom="35dp">
+                    <ImageView
+                        android:layout_weight="1.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:paddingTop="45dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/ic_iconfinder_google_assistant_1175535"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prediction Service"
+                        android:textSize="14sp"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/speedometerView"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ripple"
+                    android:elevation="1dp"
+                    android:weightSum="2"
+                    android:paddingBottom="35dp">
+                    <ImageView
+                        android:layout_weight="1.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:paddingTop="45dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/speedometer"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speedometer"
+                        android:textSize="14sp"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="0dp"
+                android:layout_below="@+id/row1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/distanceMeasureView"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="35dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.7"
+                        android:paddingStart="35dp"
+                        android:paddingTop="45dp"
+                        android:paddingEnd="35dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="Distance"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ripple"
+                    android:elevation="1dp"
+                    android:weightSum="2"
+                    android:paddingBottom="35dp"
+                    android:onClick="shareLocation">
+
+                    <ImageView
+                        android:layout_weight="1.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:paddingTop="45dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/ic_location_share"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Share Location"
+                        android:textSize="14sp"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="0dp"
+                android:layout_below="@+id/row2"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/traffic_guide_view"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ripple"
+                    android:elevation="1dp"
+                    android:weightSum="2"
+                    android:paddingBottom="35dp">
+                    <ImageView
+                        android:layout_weight="1.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:paddingTop="45dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/ic_traffic"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guide Book"
+                        android:textSize="14sp"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ripple"
+                    android:elevation="1dp"
+                    android:weightSum="2"
+                    android:paddingBottom="35dp"
+                    android:onClick="openProfile">
+
+                    <ImageView
+                        android:layout_weight="1.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:paddingTop="45dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/dp_dark"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textSize="14sp"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/broot"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/moffer"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:text="Share Location"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.9"/>
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".1"
+                    android:src="@drawable/ic_close"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/ybid"
+                android:text="Enter mobile number to send location"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="8dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+                <EditText
+                    android:id="@+id/et_number"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:paddingRight="16dp"
+                    android:hint="Mobile no. with country code"
+                    android:gravity="top|left"
+                    android:layout_weight=".3"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/primary_dark_ripple"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

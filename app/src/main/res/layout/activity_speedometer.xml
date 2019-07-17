@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/accent"
+    tools:context=".Activities.Speedometer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/title_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speedometer"
+            android:textSize="24sp"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:padding="56dp"
+            android:textAlignment="center"/>
+        <com.github.anastr.speedviewlib.AwesomeSpeedometer
+            android:id="@+id/speedView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sv_speedometerColor="@color/accent"
+            app:sv_trianglesColor="@color/primary_dark"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

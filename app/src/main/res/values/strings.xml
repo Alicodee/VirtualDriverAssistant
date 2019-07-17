@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Virtual Driver Assistant</string>
+    <string name="app_slogan">Making your life easier</string>
+    <string name="prompt_email">Enter your mobile number</string>
+    <string name="menu_next_image_detection_filter">Next
+    Tracker</string>
+    <string name="menu_next_curve_filter">Next Curve</string>
+    <string name="menu_next_mixer_filter">Next Mixer</string>
+    <string name="menu_next_convolution_filter">Next Kernel</string>
+    <string name="menu_next_camera">Next Camera</string>
+    <string name="menu_take_photo">Take Photo</string>
+    <string name="photo_error_message">error</string>
+    <string name="transition_string">transitionString</string>
+    <string name="note">This is only your username. This name will not be visible to other users of Virtual Driver Assistant.</string>
+    <string name="sms_delivered">Location has been shared.</string>
+    <string name="sms_not_delivered">Failed to share location</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/primary"
+    app:titleTextColor="@color/accent"
+    android:gravity="center_vertical"
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:theme="@style/MyToolbarTheme"
+    app:title="Traffic Signs Guide Book"
+    app:subtitleTextAppearance="@style/Base.TextAppearance.AppCompat.Medium">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"/>
+        <TextView
+            android:id="@+id/activtiyname"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Guide Book"
+            android:textColor="@color/accent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_toEndOf="@+id/back" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
