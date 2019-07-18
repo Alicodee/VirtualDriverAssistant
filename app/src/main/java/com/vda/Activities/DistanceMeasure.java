@@ -92,9 +92,7 @@ public class DistanceMeasure extends AppCompatActivity implements OnMapReadyCall
 //         * Initialize Places. For simplicity, the API key is hard-coded. In a production
 //         * environment we recommend using a secure mechanism to manage API keys.
 //         */
-//        if (!Places.isInitialized()) {
-//            Places.initialize(getApplicationContext(), "AIzaSyB982qUZj0laetYaxiB4aDerUkXWdka2qo");
-//        }
+//      
 
 
 
