@@ -211,7 +211,7 @@ public class DistanceMeasure extends AppCompatActivity implements OnMapReadyCall
 //        params.put("key","AIzaSyCn4kgpxwaM6co-YY1olrFDOm2IWguCs74");
 
         client.post("https://maps.googleapis.com/maps/api/directions/json?units=metric&origin="+latitude+","+longitude+"&destination="
-                + latitude1+","+longitude1+"&sensor=false&mode=driving&key=AIzaSyCn4kgpxwaM6co-YY1olrFDOm2IWguCs74", params, new TextHttpResponseHandler() {
+                + latitude1+","+longitude1+"&sensor=false&mode=driving&key=Enter your key here", params, new TextHttpResponseHandler() {
 
             @Override
             public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, String response, Throwable throwable) {
