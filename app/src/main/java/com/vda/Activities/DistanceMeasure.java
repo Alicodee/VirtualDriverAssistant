@@ -203,10 +203,7 @@ public class DistanceMeasure extends AppCompatActivity implements OnMapReadyCall
     private void fetchPath(double latitude, double longitude, double latitude1, double longitude1) {
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
-//        params.put("units","metric");
-//        params.put("origins",lat1+","+lon1);
-//        params.put("destinations",lat2+","+lon2);
-//        params.put("key","AIzaSyCn4kgpxwaM6co-YY1olrFDOm2IWguCs74");
+//      
 
         client.post("https://maps.googleapis.com/maps/api/directions/json?units=metric&origin="+latitude+","+longitude+"&destination="
                 + latitude1+","+longitude1+"&sensor=false&mode=driving&key=Enter your key here", params, new TextHttpResponseHandler() {
@@ -280,10 +277,7 @@ public class DistanceMeasure extends AppCompatActivity implements OnMapReadyCall
     private void distance(double lat1, double lon1, double lat2, double lon2) {
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
-//        params.put("units","metric");
-//        params.put("origins",lat1+","+lon1);
-//        params.put("destinations",lat2+","+lon2);
-//        params.put("key","AIzaSyCn4kgpxwaM6co-YY1olrFDOm2IWguCs74");
+//     
 
         client.post("https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins="+lat1+","+lon1+"&destinations="
                + lat2+","+lon2+"&key=AIzaSyCn4kgpxwaM6co-YY1olrFDOm2IWguCs74", params, new TextHttpResponseHandler() {
